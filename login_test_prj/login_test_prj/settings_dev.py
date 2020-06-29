@@ -35,8 +35,9 @@ LOGGING = {
         'file': {  # どこに出すかの設定に名前をつける `file`という名前をつけている
             'level': 'INFO',  # INFO以上のログを取り扱うという意味
             'class': 'logging.FileHandler',  # ログを出力するためのクラスを指定
-            'filename': os.path.join(BASE_DIR, 'django_login_test.log'),  # どこに出すか
+            'filename': os.path.join(BASE_DIR, 'django_login_test.log', ),  # どこに出すか
             'formatter': 'all',  # どの出力フォーマットで出すかを名前で指定
+            'encoding': 'utf-8',
         },
     },
     # フォーマッタの設定
