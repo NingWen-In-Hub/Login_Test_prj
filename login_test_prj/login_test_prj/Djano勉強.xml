@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Djano勉強>
+    <報告済み>
+        <d1>
+            <日付>20/06/08及び以前</日付>
+            <内容>
+                <Djano全体的構造>
+                    プロジェクト<br/>
+                    　アプリケーション<br/>
+                    　　ビュー<br/>
+                    　　フォーム<br/>
+                    　　モデル<br/>
+                    　　テンプレート<br/>
+                </Djano全体的構造>
+                <ルーティング>
+                    ファイルurl.pyに記載されている<br/>
+                    project/url.py<br/>
+                    app/url.py<br/>
+                </ルーティング>
+                <DjangoApp作成>
+                    settings.pyにappを追加
+                </DjangoApp作成>
+                <runserver環境関数></runserver環境関数>
+                <静的ファイルパスを設置する>settings.py</静的ファイルパスを設置する>
+                <共通利用ベーステンプレート>
+                    base.html
+                    {% block blockname %}{% endblock %}
+                    {% url 'app名:urlタグ　%}
+                    {% load static %}
+                    {% static 'パス' %}
+                </共通利用ベーステンプレート>
+                <お問合せページを作る></お問合せページを作る>
+                <本番環境と開発環境を別々にする></本番環境と開発環境を別々にする>
+
+            </内容>
+        </d1>
+    </報告済み>
+    <未報告></未報告>
+    <課題>
+        <フォームのFields>
+            代表的なフィールドクラス：<br/>
+            CharField TextInput<br/>
+            BooleanField CheckBoxInput<br/>
+            ChoiceField Select<br/>
+            DateField DateInput<br/>
+            EmailField TextInput<br/>
+            ImageField TextInput<br/>
+            <br/>
+            エラーメッセージキー:<br/>
+            required 必須かどうか（デフォルトはTrue）<br/>
+            lable<br/>
+            widget<br/>
+            validators<br/>
+        </フォームのFields>
+    </課題>
+    <自由勉強></自由勉強>
+</Djano勉強>

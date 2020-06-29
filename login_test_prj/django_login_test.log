@@ -1,0 +1,185 @@
+[INFO]	asctime:2020-06-26 14:13:56,923	module:autoreload	message:Watching for file changes with StatReloader	process:42328	thread:51164
+[INFO]	asctime:2020-06-26 14:16:09,801	module:autoreload	message:Watching for file changes with StatReloader	process:7160	thread:8672
+[INFO]	asctime:2020-06-26 14:18:08,476	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:08,608	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 200 13477	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:10,540	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:10,753	module:basehttp	message:"POST /profile_edit/9/ HTTP/1.1" 200 9401	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:11,973	module:views	message:User A= 11111111111111111111	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:12,355	module:basehttp	message:"GET /profile/ HTTP/1.1" 200 14982	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:12,375	module:basehttp	message:"GET /media/Dragon_beQ1ss8.PNG HTTP/1.1" 304 0	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:14,035	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:14,141	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 200 13477	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:18:33,587	module:basehttp	message:"GET /user_list HTTP/1.1" 200 16015	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:20:51,416	module:basehttp	message:"GET /user_listA HTTP/1.1" 200 16395	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:21:24,703	module:views	message:<QuerySet [<CustomUser: ww2>, <CustomUser: ww3>, <CustomUser: ww4>, <CustomUser: ww7>, <CustomUser: ww1>, <CustomUser: supersuper>, <CustomUser: ww6>, <CustomUser: ww5>]>	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:21:25,054	module:basehttp	message:"GET /user_listB HTTP/1.1" 200 17646	process:7160	thread:48400
+[INFO]	asctime:2020-06-26 14:32:26,751	module:views	message:User A= 11111111111111111111	process:7160	thread:44372
+[INFO]	asctime:2020-06-26 14:32:26,875	module:basehttp	message:"GET /profile/ HTTP/1.1" 200 13858	process:7160	thread:44372
+[INFO]	asctime:2020-06-26 14:32:26,898	module:basehttp	message:"GET /media/Dragon_beQ1ss8.PNG HTTP/1.1" 304 0	process:7160	thread:44372
+[INFO]	asctime:2020-06-26 14:32:28,468	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:7160	thread:44372
+[INFO]	asctime:2020-06-26 14:32:28,566	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 200 13477	process:7160	thread:44372
+[INFO]	asctime:2020-06-26 14:40:44,223	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:7160	thread:2496
+[INFO]	asctime:2020-06-26 14:40:44,387	module:basehttp	message:"POST /profile_edit/9/ HTTP/1.1" 200 9401	process:7160	thread:2496
+[INFO]	asctime:2020-06-26 14:40:45,880	module:views	message:User A= スーパーユーザー	process:7160	thread:2496
+[INFO]	asctime:2020-06-26 14:40:45,988	module:basehttp	message:"GET /profile/ HTTP/1.1" 200 14986	process:7160	thread:2496
+[INFO]	asctime:2020-06-26 14:44:47,297	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\models.py changed, reloading.	process:7160	thread:8672
+[INFO]	asctime:2020-06-26 14:44:48,689	module:autoreload	message:Watching for file changes with StatReloader	process:53108	thread:52568
+[INFO]	asctime:2020-06-26 14:44:49,510	module:views	message:User A= スーパーユーザー	process:53108	thread:50968
+[ERROR]	asctime:2020-06-26 14:44:50,431	module:log	message:Internal Server Error: /profile/	process:53108	thread:50968
+Traceback (most recent call last):
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 992, in render
+    return render_value_in_context(output, context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 971, in render_value_in_context
+    value = str(value)
+TypeError: __str__ returned non-string (type int)
+[ERROR]	asctime:2020-06-26 14:44:50,498	module:basehttp	message:"GET /profile/ HTTP/1.1" 500 205000	process:53108	thread:50968
+[INFO]	asctime:2020-06-26 14:45:06,242	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\models.py changed, reloading.	process:53108	thread:52568
+[INFO]	asctime:2020-06-26 14:45:07,140	module:autoreload	message:Watching for file changes with StatReloader	process:51744	thread:52956
+[INFO]	asctime:2020-06-26 14:45:07,789	module:views	message:User A= スーパーユーザー	process:51744	thread:40760
+[INFO]	asctime:2020-06-26 14:45:08,162	module:basehttp	message:"GET /profile/ HTTP/1.1" 200 13862	process:51744	thread:40760
+[INFO]	asctime:2020-06-26 20:29:50,306	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\forms\forms.py changed, reloading.	process:51744	thread:52956
+[INFO]	asctime:2020-06-26 20:29:51,950	module:autoreload	message:Watching for file changes with StatReloader	process:65956	thread:66328
+[INFO]	asctime:2020-06-26 20:29:52,050	module:forms	message:種族ID＜5：<QuerySet [<UserSpecies: 未知>, <UserSpecies: 獣人>, <UserSpecies: 龍>, <UserSpecies: 人魚>, <UserSpecies: 植物>]>	process:65956	thread:66328
+[INFO]	asctime:2020-06-26 20:36:49,001	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:65956	thread:64960
+[INFO]	asctime:2020-06-26 20:36:49,199	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 200 13596	process:65956	thread:64960
+[INFO]	asctime:2020-06-26 20:38:03,683	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\forms\forms.py changed, reloading.	process:65956	thread:66328
+[INFO]	asctime:2020-06-26 20:38:05,169	module:autoreload	message:Watching for file changes with StatReloader	process:58040	thread:65816
+[INFO]	asctime:2020-06-26 20:38:05,265	module:forms	message:種族ID＜5：<QuerySet [<UserSpecies: 未知>, <UserSpecies: 獣人>, <UserSpecies: 龍>, <UserSpecies: 人魚>, <UserSpecies: 植物>]>	process:58040	thread:65816
+[INFO]	asctime:2020-06-26 20:38:06,010	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:58040	thread:66308
+[ERROR]	asctime:2020-06-26 20:38:06,781	module:log	message:Internal Server Error: /profile_edit/9/	process:58040	thread:66308
+Traceback (most recent call last):
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 986, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 670, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 795, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\template\base.py", line 857, in _resolve_lookup
+    current = current()
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\forms.py", line 274, in as_table
+    return self._html_output(
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\forms.py", line 231, in _html_output
+    output.append(normal_row % {
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\utils\html.py", line 373, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\boundfield.py", line 89, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\boundfield.py", line 224, in build_widget_attrs
+    if widget.use_required_attribute(self.initial) and self.field.required and self.form.use_required_attribute:
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\widgets.py", line 700, in use_required_attribute
+    return use_required_attribute and first_choice is not None and self._choice_has_empty_value(first_choice)
+  File "C:\Windows\System32\venv_login_test\lib\site-packages\django\forms\widgets.py", line 686, in _choice_has_empty_value
+    value, _ = choice
+TypeError: cannot unpack non-iterable UserSpecies object
+[ERROR]	asctime:2020-06-26 20:38:06,847	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 500 209035	process:58040	thread:66308
+[INFO]	asctime:2020-06-26 20:46:54,712	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\forms\forms.py changed, reloading.	process:58040	thread:65816
+[INFO]	asctime:2020-06-26 20:46:55,516	module:autoreload	message:Watching for file changes with StatReloader	process:65460	thread:65188
+[INFO]	asctime:2020-06-26 20:47:07,838	module:autoreload	message:C:\Windows\System32\venv_login_test\login_test_prj\login_test_app\forms\forms.py changed, reloading.	process:65460	thread:65188
+[INFO]	asctime:2020-06-26 20:47:08,684	module:autoreload	message:Watching for file changes with StatReloader	process:59888	thread:64596
+[INFO]	asctime:2020-06-26 20:47:08,762	module:forms	message:種族ID＜5：<QuerySet [<UserSpecies: 未知>, <UserSpecies: 獣人>, <UserSpecies: 龍>, <UserSpecies: 人魚>, <UserSpecies: 植物>]>	process:59888	thread:64596
+[INFO]	asctime:2020-06-26 20:47:10,558	module:views	message:
+編集のユーザー：9
+ログインユーザー：9	process:59888	thread:62648
+[INFO]	asctime:2020-06-26 20:47:10,713	module:basehttp	message:"GET /profile_edit/9/ HTTP/1.1" 200 13835	process:59888	thread:62648

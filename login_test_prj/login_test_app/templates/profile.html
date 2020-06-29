@@ -1,0 +1,85 @@
+﻿{% extends 'base.html'%}
+{% load static %}
+{% block title %}マイプロフィール{% endblock %}
+{% block active_profile %}active{% endblock %}
+{% block head %}
+    <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+{% endblock %}
+{% block contents %}
+    <div class="container">
+        <div class="my-div-style w-100">
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <strong>マイプロフィール</strong>
+                </div>
+            </div>
+            <hr>
+
+            {% if member_list %}
+            {% if member_list.photo %}
+            <div class="row">
+                <div class="col-3">
+                    <strong>写真：</strong>
+                </div>
+                <div class="col-3">
+                    <img src="{{ object_list.photo.url }}" width="200" height="200"/>
+                </div>
+            </div>
+            <hr>
+            {% endif %}
+
+            <div class="row">
+                <div class="col-3">
+                    <strong>お名前：</strong>
+                </div>
+                <div class="col-9">
+                {{ object_list.names }}
+                </div>
+
+                <div class="col-3">
+                    <strong>ID：</strong>
+                </div>
+                <div class="col-9">
+                {{ object_list.user }}
+                </div>
+
+                {% if object_list.age %}
+                <div class="col-3">
+                    <strong>年齢：</strong>
+                </div>
+                <div class="col-9">
+                {{ object_list.age }}歳
+                </div>
+                {% endif %}
+
+                {% if object_list.species %}
+                <div class="col-3">
+                    <strong>種族：</strong>
+                </div>
+                <div class="col-9">
+                    {% if object_list.species %}
+                    {{ object_list.species }}族
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <div class="col-3">
+                    <strong>更新日時：</strong>
+                </div>
+                <div class="col-9">
+                {{ object_list.updated_at }}
+                </div>
+                <br>
+                <br>
+                <a class="btn btn-primary" href="{% url 'login_test_app:profile_edit' object_list.pk %}">編集</a>
+            </div>
+            <hr>
+             {% else %}
+                <p>プロフィール：データ無し</p>
+                <br>
+                <a class="btn btn-primary" href="{% url 'login_test_app:profile_create' %}">作成</a>
+             {% endif %}
+        </div>
+    </div>
+{% endblock %}
