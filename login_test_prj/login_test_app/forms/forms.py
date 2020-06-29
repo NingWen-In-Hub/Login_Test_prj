@@ -3,7 +3,9 @@ from django.forms import ModelForm
 from django.core.mail import EmailMessage
 from login_test_app.models import Profile, UserSpecies
 from .forms2 import AddForm2
+from django.forms import MultiWidget
 import logging
+
 logger = logging.getLogger(__name__)
 
 
@@ -65,13 +67,15 @@ class ProfileEditForm(forms.ModelForm):
     CHOICES = UserSpecies.objects.filter(id__lt='5')
     logger.info("種族ID＜5：{}".format(CHOICES))
     test2 = forms.ModelChoiceField(label='ChoiceField', queryset=CHOICES)
+    test3 = forms.ModelMultipleChoiceField(label='CheckboxField', queryset=CHOICES,
+                                           widget=forms.CheckboxSelectMultiple(attrs={'class': 'checkbox'}))
+    test4 = forms.ModelMultipleChoiceField(label='radio', queryset=CHOICES,
+                                           widget=forms.RadioSelect(attrs={'class': 'radio'}))
 
     class Meta:
         model = Profile
         # exclude = ()  # created_at,updated_atは編集できないfields
         exclude = ("user", "created_at", "updated_at")
-
-        names = forms.CharField(max_length=5)
 
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
