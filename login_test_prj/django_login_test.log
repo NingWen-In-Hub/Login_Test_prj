@@ -1,2 +1,4 @@
 [INFO]	asctime:2020-06-29 20:42:47,710	module:autoreload	message:Watching for file changes with StatReloader	process:68684	thread:97752
 [INFO]	asctime:2020-06-29 20:42:47,757	module:forms	message:種族ID＜5：<QuerySet [<UserSpecies: 未知>, <UserSpecies: 獣人>, <UserSpecies: 龍>, <UserSpecies: 人魚>, <UserSpecies: 植物>]>	process:68684	thread:97752
+[INFO]	asctime:2020-06-30 10:27:18,755	module:autoreload	message:Watching for file changes with StatReloader	process:107528	thread:77672
+[INFO]	asctime:2020-06-30 10:27:19,067	module:forms	message:種族ID＜5：<QuerySet [<UserSpecies: 未知>, <UserSpecies: 獣人>, <UserSpecies: 龍>, <UserSpecies: 人魚>, <UserSpecies: 植物>]>	process:107528	thread:77672
